@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token }}"> 
+    <title>View Attendance Report</title>
+    <link rel="stylesheet" href="/static/css/attendance_styles.css/">
+</head>
+<body>
+    <div class="container">
+        <h1>View Attendance Report</h1>
+        <form id="attendanceReportForm">
+            <label for="studentId">Student ID:</label>
+            <input type="number" id="studentId" name="studentId" required>
+
+            <button type="submit">View Report</button>
+        </form>
+        <div id="attendanceResult"></div>  
+    </div>
+
+    <script src="/static/js/report.js"></script>
+</body>
+</html>
